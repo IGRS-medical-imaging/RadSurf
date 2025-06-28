@@ -17,14 +17,6 @@ We propose **Rad-Surf**, an automated and generalizable pipeline that:
 - Includes a **Deep Image Prior (DIP)**-based super-resolution enhancement to improve DRR quality.
 - Provides post-processing for seamless integration into deep learning-based SVR pipelines.
 
-The generated DRRs were evaluated using:
-
-▪ **Signal-to-Noise Ratio (SNR)**  
-▪ **Contrast-to-Noise Ratio (CNR)**  
-▪ **Entropy**  
-▪ **Edge Sharpness**
-
-Additionally, the reconstructed meshes were clinically analyzed based on four vertebral geometric parameters.
 
 ###  `Results`  
 The **Rad-Surf** dataset for lumbar vertebrae SVR includes:
