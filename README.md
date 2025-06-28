@@ -52,8 +52,9 @@ DIP-based super-resolution, and (D) Mesh rendering and post-processing
 
 <details>
 <summary><b>1. DRR Generation</b></summary>
-DRRs are synthesized from CT volumes using 3DSlicer
-To generate DRRs, CT and thier corresponding segmentation labels is needed as follows
+DRRs are synthesized from CT volumes using 3DSlicer. The CTs with the corresponding segmentation labels should be as follows:
+  
+```bash
 VerSe/
 ├── verse004/
 │ ├── ct.nii.gz # CT volume
@@ -61,7 +62,7 @@ VerSe/
 ├── verse005/
 │ ├── ct.nii.gz
 │ └── segmentation.nii.gz
-
+```
 To render the DRRs:
 
 ```bash
