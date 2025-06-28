@@ -78,7 +78,7 @@ DIP-based super-resolution, and (D) Mesh rendering and post-processing
 ## <div align="center">Implementation Details</div>
 
 <details>
-<summary><b>1. DRR  and Mesh Generation</b></summary>
+<summary><b>1.DRR Generation</b></summary>
 DRRs are synthesized from CT volumes. The CTs with the corresponding segmentation labels should be as follows:
   
 ```bash
@@ -90,18 +90,17 @@ VerSe/
 │ ├── ct.nii.gz
 │ └── segmentation.nii.gz
 ```
-To render the DRRs and meshes, this command can be called:
+To render the DRRs, this command can be called:
 
 ```bash
-RadSurf/
-└── DRR_Generation/
-    ├── 1_Mask_volume.py      # Applies segmentation masking
-    ├── 2_Render_DRR.py       # Uses 3D Slicer to render DRRs
-    └── 3_Capture_DRR.py      # Saves projected DRRs
+
 ```
 
 </details>
+<details>
+<summary><b>2. Mesh Generation</b></summary>
 
+</details>
 
 
 
