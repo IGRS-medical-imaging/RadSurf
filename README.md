@@ -5,13 +5,13 @@
 
 ---
 
-###  `**Abstract**`  
+###  `Abstract`  
 Single-view reconstruction (SVR) enables 3D reconstruction of vertebrae from a single radiograph and is particularly valuable in Minimally Invasive Spine Surgery (MISS), where intraoperative imaging is limited to 2D data obtained from C-arm fluoroscopy. SVR can reduce radiation exposure by avoiding multi-angle imaging. It supports various 3D representations, with mesh-based outputs offering greater memory efficiency and anatomical detail compared to voxel grids. However, SVR remains underexplored due to the lack of paired radiograph–surface datasets.
 
-###  `**Problem Statement**`  
+###  `Problem Statement`  
 Although datasets like VerSe, TotalSegmentator, and CTSpine1K offer CT scans with segmentation labels, and others like MedShapeNet and VSD provide surface models, none offer *paired radiographs and meshes* necessary for supervised SVR learning.
 
-### `**Method**`  
+### `Method`  
 We propose **Rad-Surf**, an automated and generalizable pipeline that:
 - Generates **Digitally Reconstructed Radiographs (DRRs)** and surface meshes from CT–segmentation pairs.
 - Includes a **Deep Image Prior (DIP)**-based super-resolution enhancement to improve DRR quality.
@@ -25,7 +25,7 @@ The generated DRRs were evaluated using:
 
 Additionally, the reconstructed meshes were clinically analyzed based on four vertebral geometric parameters.
 
-###  `**Results**`  
+###  `Results`  
 The **Rad-Surf** dataset for lumbar vertebrae SVR includes:
 - **475 unique DRR–mesh pairs**
 - **24 diverse DRRs per mesh**
@@ -52,4 +52,26 @@ The dataset is **open-source** and designed to support robust training of SVR mo
 You can download the dataset from the following link:
 
 🔗 [3DReVert-Dataset](https://drive.google.com/drive/folders/1YBzQlRE8mZOfmKDpoc9omabz6GCIIJbH?usp=sharing) 
-
+Sub-directory-based arrangement:
+```
+DRR/
+├── verse004_segment_20/
+│  ├── rendering/
+│    ├── 00.png
+│    ├── 01.png
+│    ├── 02.png
+│    └── ...
+├──verse005_segment_20/
+│   ├── rendering/
+│   │   ├── 00.png
+│   │   ├── 01.png
+│   │   ├── ...
+│   │   └── 23.png
+├── ...  
+│   └── ...
+Mesh/
+├── verse004_segment_20.stl/..
+├── verse005_segment_20.stl/..
+├── ...
+```
+</details>
