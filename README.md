@@ -36,7 +36,13 @@ You can download the dataset from the following link:
 
 🔗 [RadSurf-Dataset](https://drive.google.com/drive/folders/1YBzQlRE8mZOfmKDpoc9omabz6GCIIJbH?usp=sharing) 
 </details>
-
+<details>
+<summary><b>Generated DRR</b></summary>
+<p align="center">
+  <img src="DRR.png">
+</p>
+<div align = "center">
+<details>
 ## <div align="center">Methodology</div>
 
 <p align="center">
