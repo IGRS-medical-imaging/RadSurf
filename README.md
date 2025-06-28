@@ -37,15 +37,27 @@ You can download the dataset from the following link:
 🔗 [RadSurf-Dataset](https://drive.google.com/drive/folders/1YBzQlRE8mZOfmKDpoc9omabz6GCIIJbH?usp=sharing) 
 </details>
 <details>
-<summary><b>Generated DRR</b></summary>
+<summary><b>Generated DRRs</b></summary>
 
 <p align="center">
   <img src="DRR.png" alt="Generated DRR" width="60%">
 </p>
 
 <div align="center">
-  Example of a DRR generated from CT and segmentation using 3D Slicer.
+  Example of  DRRs generated from CT and segmentation using 3D Slicer.
 </div>
+<details>
+<summary><b>Generated Meshes</b></summary>
+
+<p align="center">
+  <img src="mesh.png" alt="Generated Meshes" width="60%">
+</p>
+
+<div align="center">
+  Example of meshes generated from CT and segmentation using 3D Slicer.
+</div>
+
+</details>
 
 </details>
 
