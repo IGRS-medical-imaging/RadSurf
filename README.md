@@ -90,16 +90,19 @@ VerSe/
 │ ├── ct.nii.gz
 │ └── segmentation.nii.gz
 ```
-To render the DRRs, this command can be called:
-
+To generate the mask volume for DRR Generation, run the following in the Command Prompt
 ```bash
-
+"C:\Users\path\to\Slicer.exe" --python-script "path\to\1_Mask_volume"
 ```
+To 
 
 </details>
 <details>
 <summary><b>2. Mesh Generation</b></summary>
+  
+```bash
 
+```
 </details>
 
 
