@@ -1,4 +1,4 @@
-<h1 align="center">Rad-Surf: Automated Synthesis of Radiographs and Vertebral Surfaces for Single-View Reconstruction
+<h1 align="center">RadSurf: Automated Synthesis of Radiographs and Vertebral Surfaces for Single-View Reconstruction
 </h1>
 
 <p  align="center">  
@@ -92,16 +92,16 @@ VerSe/
 ```
 To generate the mask volume for DRR Generation, run the following in the Command Prompt
 ```bash
-"C:\Users\path\to\Slicer.exe" --python-script "path\to\1_Mask_volume"
+"C:\Users\path\to\Slicer.exe" --python-script "path\RadSurf\DRR Generation\1_Mask_volume"
 ```
-To 
+
 
 </details>
 <details>
 <summary><b>2. Mesh Generation</b></summary>
   
 ```bash
-
+"C:\Users\path\to\Slicer.exe" --python-script "path\RadSurf\Mesh Generation\1_Render_mesh.py""
 ```
 </details>
 
