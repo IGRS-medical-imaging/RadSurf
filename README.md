@@ -51,30 +51,45 @@ DIP-based super-resolution, and (D) Mesh rendering and post-processing
 ## <div align="center">Implementation Details</div>
 
 <details>
-<summary><b>1. DRR Rendering</b></summary>
+<summary><b>1. DRR Generation</b></summary>
+DRRs are synthesized from CT volumes using 3DSlicer
+To generate DRRs, CT and thier corresponding segmentation labels is needed as follows
+VerSe/
+├── verse004/
+│ ├── ct.nii.gz # CT volume
+│ └── segmentation.nii.gz # Corresponding vertebra mask
+├── verse005/
+│ ├── ct.nii.gz
+│ └── segmentation.nii.gz
 
-DRRs are synthesized from CT volumes using [Plastimatch](https://plastimatch.org/), simulating X-ray projections from 24 rotational views around the isocenter. Output images are resized, normalized, and prepared for downstream processing.
+To render the DRRs:
+
+```bash
+RadSurf/
+└── DRR_Generation/
+    ├── 1_Mask_volume.py      # Applies segmentation masking
+    ├── 2_Render_DRR.py       # Uses 3D Slicer to render DRRs
+    └── 3_Capture_DRR.py      # Saves projected DRRs
+```
 
 </details>
 
 <details>
-<summary><b>2. Mesh Extraction</b></summary>
+<summary><b>2. DRR Processing</b></summary>
 
-Meshes are generated using the marching cubes algorithm applied to segmentation volumes. Post-processing includes smoothing, decimation, and unit scaling to create clean watertight STL models.
 
-</details>
-
-<details>
-<summary><b>3. DIP-based Super-Resolution</b></summary>
-
-Low-resolution DRRs are enhanced using a Deep Image Prior (DIP) network. The model optimizes a randomly initialized CNN to reconstruct a high-quality version without external data.
 
 </details>
 
 <details>
-<summary><b>4. Data Structuring & Pairing</b></summary>
+<summary><b>3. Mesh Generation </b></summary>
 
-Each mesh is paired with 24 corresponding DRRs from different viewpoints. The dataset is arranged in a sub-directory format to support easy loading for training pipelines.
+
+</details>
+
+<details>
+<summary><b>4. Mesh Processing</b></summary>
+
 
 </details>
 
