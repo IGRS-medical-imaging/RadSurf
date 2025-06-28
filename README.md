@@ -100,6 +100,7 @@ To generate the mask volume for DRR Generation, run the following in the Command
 <details>
 <summary><b>2. Mesh Generation</b></summary>
 To render the meshes, run the following in command prompt
+  
 ```bash
 "C:\Users\path\to\Slicer.exe" --python-script "path\RadSurf\Mesh Generation\1_Render_mesh.py""
 ```
