@@ -5,25 +5,7 @@
 
 ---
 
-###  `Abstract`  
-Single-view reconstruction (SVR) enables 3D reconstruction of vertebrae from a single radiograph and is particularly valuable in Minimally Invasive Spine Surgery (MISS), where intraoperative imaging is limited to 2D data obtained from C-arm fluoroscopy. SVR can reduce radiation exposure by avoiding multi-angle imaging. It supports various 3D representations, with mesh-based outputs offering greater memory efficiency and anatomical detail compared to voxel grids. However, SVR remains underexplored due to the lack of paired radiograph–surface datasets.
-
-###  `Problem Statement`  
-Although datasets like VerSe, TotalSegmentator, and CTSpine1K offer CT scans with segmentation labels, and others like MedShapeNet and VSD provide surface models, none offer *paired radiographs and meshes* necessary for supervised SVR learning.
-
-### `Method`
-
-The **Rad-Surf** pipeline is a modular and automated process designed to generate paired 2D–3D representations of vertebrae from CT and segmentation data. It supports three major components: DRR generation, point cloud extraction, and surface mesh construction.
-
-###  `Results`  
-The **Rad-Surf** dataset for lumbar vertebrae SVR includes:
-- **475 unique DRR–mesh pairs**
-- **24 diverse DRRs per mesh**
-- **Total: 11,400 DRR–mesh pairs**  
-The dataset is **open-source** and designed to support robust training of SVR models.
-
-</p>
-
+**Rad-Surf** is an automated pipeline designed for single-view 3D vertebra reconstruction in Minimally Invasive Spine Surgery (MISS), where only 2D radiographs are available intraoperatively. Unlike existing datasets that lack paired radiograph–surface data, Rad-Surf generates high-quality Digitally Reconstructed Radiographs (DRRs), point clouds, and surface meshes from CT–segmentation pairs. The dataset is made open source and designed to support robust models.[RadSurf-Dataset](https://drive.google.com/drive/folders/1YBzQlRE8mZOfmKDpoc9omabz6GCIIJbH?usp=sharing) 
 
 <h3 > <i>Index Terms</i> </h3> 
 
@@ -41,9 +23,14 @@ The dataset is **open-source** and designed to support robust training of SVR mo
 </details>
 <h2 align="center">Dataset</h2>
 <details>
+The **Rad-Surf** dataset for lumbar vertebrae SVR includes:
+- **475 unique DRR–mesh pairs**
+- **24 diverse DRRs per mesh**
+- **Total: 11,400 DRR–mesh pairs**  
+
 You can download the dataset from the following link:
 
-🔗 [3DReVert-Dataset](https://drive.google.com/drive/folders/1YBzQlRE8mZOfmKDpoc9omabz6GCIIJbH?usp=sharing) 
+🔗 [RadSurf-Dataset](https://drive.google.com/drive/folders/1YBzQlRE8mZOfmKDpoc9omabz6GCIIJbH?usp=sharing) 
 Sub-directory-based arrangement:
 ```
 DRR/
