@@ -46,7 +46,7 @@ You can download the dataset from the following link:
 <div align="center">
   Example of  DRRs generated from CT and segmentation using 3D Slicer.
 </div>
-<details>
+
 <details>
 <summary><b>Generated Meshes</b></summary>
 
@@ -55,7 +55,7 @@ You can download the dataset from the following link:
 </p>
 
 <div align="center">
-  Example of meshes generated from CT and segmentation using 3D Slicer.
+  Example of surface meshes generated from CT and segmentation using 3D Slicer.
 </div>
 
 </details>
