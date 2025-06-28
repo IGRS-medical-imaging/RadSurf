@@ -47,3 +47,34 @@ You can download the dataset from the following link:
 :small_orange_diamond: Overview of the Rad-Surf Algorithm: (A) Input CT scan and corresponding segmentation label, (B) DRR rendering and preparation, (C) DRR enhancement using
 DIP-based super-resolution, and (D) Mesh rendering and post-processing 
 </div>
+
+## <div align="center">Implementation Details</div>
+
+<details>
+<summary><b>1. DRR Rendering</b></summary>
+
+DRRs are synthesized from CT volumes using [Plastimatch](https://plastimatch.org/), simulating X-ray projections from 24 rotational views around the isocenter. Output images are resized, normalized, and prepared for downstream processing.
+
+</details>
+
+<details>
+<summary><b>2. Mesh Extraction</b></summary>
+
+Meshes are generated using the marching cubes algorithm applied to segmentation volumes. Post-processing includes smoothing, decimation, and unit scaling to create clean watertight STL models.
+
+</details>
+
+<details>
+<summary><b>3. DIP-based Super-Resolution</b></summary>
+
+Low-resolution DRRs are enhanced using a Deep Image Prior (DIP) network. The model optimizes a randomly initialized CNN to reconstruct a high-quality version without external data.
+
+</details>
+
+<details>
+<summary><b>4. Data Structuring & Pairing</b></summary>
+
+Each mesh is paired with 24 corresponding DRRs from different viewpoints. The dataset is arranged in a sub-directory format to support easy loading for training pipelines.
+
+</details>
+
