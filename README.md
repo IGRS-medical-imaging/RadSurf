@@ -35,28 +35,6 @@ The **Rad-Surf** dataset for lumbar vertebrae single-view reconstruction include
 You can download the dataset from the following link:
 
 🔗 [RadSurf-Dataset](https://drive.google.com/drive/folders/1YBzQlRE8mZOfmKDpoc9omabz6GCIIJbH?usp=sharing) 
-Sub-directory-based arrangement:
-```
-DRR/
-├── verse004_segment_20/
-│  ├── rendering/
-│    ├── 00.png
-│    ├── 01.png
-│    ├── 02.png
-│    └── ...
-├──verse005_segment_20/
-│   ├── rendering/
-│   │   ├── 00.png
-│   │   ├── 01.png
-│   │   ├── ...
-│   │   └── 23.png
-├── ...  
-│   └── ...
-Mesh/
-├── verse004_segment_20.stl/..
-├── verse005_segment_20.stl/..
-├── ...
-```
 </details>
 
 ## <div align="center">Methodology</div>
