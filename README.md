@@ -38,11 +38,17 @@ You can download the dataset from the following link:
 </details>
 <details>
 <summary><b>Generated DRR</b></summary>
+
 <p align="center">
-  <img src="DRR.png">
+  <img src="DRR.png" alt="Generated DRR" width="60%">
 </p>
-<div align = "center">
-<details>
+
+<div align="center">
+  Example of a DRR generated from CT and segmentation using 3D Slicer.
+</div>
+
+</details>
+
 ## <div align="center">Methodology</div>
 
 <p align="center">
