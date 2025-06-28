@@ -11,13 +11,9 @@ Single-view reconstruction (SVR) enables 3D reconstruction of vertebrae from a s
 ###  `Problem Statement`  
 Although datasets like VerSe, TotalSegmentator, and CTSpine1K offer CT scans with segmentation labels, and others like MedShapeNet and VSD provide surface models, none offer *paired radiographs and meshes* necessary for supervised SVR learning.
 
-## <div align="center">Method</div>
+### `Method`
 
 The **Rad-Surf** pipeline is a modular and automated process designed to generate paired 2D–3D representations of vertebrae from CT and segmentation data. It supports three major components: DRR generation, point cloud extraction, and surface mesh construction.
-
-
-</details>
-
 
 ###  `Results`  
 The **Rad-Surf** dataset for lumbar vertebrae SVR includes:
@@ -73,6 +69,7 @@ Mesh/
 </details>
 
 ## <div align="center">Methodology</div>
+
 <p align="center">
   <img src="Methodology_RadSurf.jpg">
 </p>
