@@ -18,6 +18,7 @@ We propose **Rad-Surf**, an automated and generalizable pipeline that:
 - Provides post-processing for seamless integration into deep learning-based SVR pipelines.
 
 The generated DRRs were evaluated using:
+
 ▪ **Signal-to-Noise Ratio (SNR)**  
 ▪ **Contrast-to-Noise Ratio (CNR)**  
 ▪ **Entropy**  
