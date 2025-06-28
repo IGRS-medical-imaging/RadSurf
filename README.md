@@ -40,12 +40,14 @@ You can download the dataset from the following link:
 <summary><b>Generated DRRs</b></summary>
 
 <p align="center">
-  <img src="DRR.png" alt="Generated DRR" width="60%">
+  <img src="DRR.png" alt="Generated DRRs" width="60%">
 </p>
 
 <div align="center">
-  Example of  DRRs generated from CT and segmentation using 3D Slicer.
+  Example of DRRs generated from CT and segmentation using 3D Slicer.
 </div>
+
+</details>
 
 <details>
 <summary><b>Generated Meshes</b></summary>
