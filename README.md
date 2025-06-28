@@ -75,3 +75,13 @@ Mesh/
 ├── ...
 ```
 </details>
+
+## <div align="center">Methodology</div>
+<p align="center">
+  <img src="Methodology_RadSurf.jpg">
+</p>
+<div align = "center">
+
+:small_orange_diamond: Overview of the Rad-Surf Algorithm: (A) Input CT scan and corresponding segmentation label, (B) DRR rendering and preparation, (C) DRR enhancement using
+DIP-based super-resolution, and (D) Mesh rendering and post-processing 
+</div>
