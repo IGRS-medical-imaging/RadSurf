@@ -19,14 +19,18 @@
 </div>
 
 </div>
-
 </details>
+
 <h2 align="center">Dataset</h2>
+
 <details>
-The **Rad-Surf** dataset for lumbar vertebrae SVR includes:
-- **475 unique DRR–mesh pairs**
-- **24 diverse DRRs per mesh**
+<summary><b>Rad-Surf Dataset Overview</b></summary>
+
+The **Rad-Surf** dataset for lumbar vertebrae single-view reconstruction includes:  
+- **475 unique DRR–mesh pairs**  
+- **24 DRRs per mesh**  
 - **Total: 11,400 DRR–mesh pairs**  
+
 
 You can download the dataset from the following link:
 
